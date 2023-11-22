@@ -1,12 +1,10 @@
-def bubble_sort(nums:list[int]):
-    for i in range(0,len(nums)):
-        for j in range(i+1,len(nums)):
-            if nums[i]>nums[j]:
-                v=nums[j]
-                nums[j]=nums[i]
-                nums[i]=v
+def merge_sort(nums:list[int]):
+    l=len(nums)//2
+    for i in range(0,l):
+        # if nums[i]<nums[-(i+1)]:
+        v=nums[-(i+1)]
+        nums[-(i+1)]=nums[i]
+        nums[i]=v
     return nums
 
-print(bubble_sort([98,100,53,903,34,76,25]))
-
-
+print(merge_sort([1,4,3,65,23,78,13,89,45,27]))
