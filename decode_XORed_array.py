@@ -1,21 +1,16 @@
-# a=76
-# b=46
+# There is a hidden integer array arr that consists of n non-negative integers.
 
-# a=a^b
-# b=a^b
-# a=a^b
+# It was encoded into another integer array encoded of length n - 1, such that encoded[i] = arr[i] XOR arr[i + 1]. 
+# For example, if arr = [1,0,2,1], then encoded = [1,2,3].
 
-# print(a,b)
+# You are given the encoded array. You are also given an integer first, that is the first element of arr, i.e. arr[0].
 
-# x=1
-# y1=1
-# y2=2
-# y3=3
-# a=y1^x
-# b=y2^a
-# c=y3^b
+# Return the original array arr. It can be proved that the answer exists and is unique.
 
-# print(x,a,b,c)
+# encoded = [1,2,3], first = 1
+#  If arr = [1,0,2,1], then first = 1 and encoded = [1 XOR 0, 0 XOR 2, 2 XOR 1] = [1,2,3]
+
+# completed
 
 def decode(encoded: list[int], first: int):
         arr=[first]
