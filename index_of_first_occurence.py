@@ -16,7 +16,6 @@ def strStr(haystack: str, needle: str):
                 if haystack[j+i]!=needle[i]:
                     j+=1
                     break
-                print(j,i)
             else: 
                 return index
         else: j+=1
